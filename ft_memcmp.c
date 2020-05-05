@@ -17,7 +17,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
+/*
 #include <string.h>
 #include <stdio.h>
 
@@ -31,3 +31,4 @@ int main(int argc, char** argv)
 	
 	return 0;
 }
+*/
