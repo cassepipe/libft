@@ -17,20 +17,20 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);	
 }
 
-//#include  <unistd.h>
-//#include <string.h>
-//
-///*
+#include  <unistd.h>
+#include <string.h>
+
+/*
  int main(void)
-//{
-//
-//	char arr[] = "Hello";
-//
-//	ft_memcpy(arr, "World", 3);
-//	write(1, arr, sizeof arr);
-//	write(1, "\n",  1);
-//
-//	return 0;
-//}
+{
+
+	char arr[] = "Hello";
+
+	ft_memcpy(arr, "World", 3);
+	write(1, arr, sizeof arr);
+	write(1, "\n",  1);
+
+	return 0;
+}
 		
 */
