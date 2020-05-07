@@ -22,7 +22,8 @@ char *ft_strrchr(const char *s, int c)
 }
 
 #include <stdio.h>
-int main(int argc, char **argv)
+/*
+ int main(int argc, char **argv)
 {
 	if (argc != 3) return  1;
 	int needle = argv[1][0];
@@ -38,3 +39,4 @@ int main(int argc, char **argv)
 	 * The fact that many implementations print a string such as (null) when passed a null pointer is a kindness that is dangerous to rely upon. The beauty of undefined behaviour is that such a response is permitted, but it is not required. Similarly, a crash is permitted, but not required (more's the pity – people get bitten if they work on a forgiving system and then port to other less forgiving systems)
 	 */
 }
+*/

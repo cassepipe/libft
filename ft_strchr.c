@@ -20,7 +20,8 @@ char *ft_strchr(const char *s, int c)
 }
 
 #include <stdio.h>
-int main(int argc, char **argv)
+/*
+ int main(int argc, char **argv)
 {
 	if (argc != 3) return  1;
 	int needle = argv[1][0];
@@ -32,3 +33,4 @@ int main(int argc, char **argv)
 
 	printf("%p - %p = %ld \n", ptr, argv[2], (long)(ptr - argv[2]));
 }
+*/

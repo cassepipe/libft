@@ -17,7 +17,8 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
 #include <stdio.h>
 #include <stdint.h>
 
-int main(int argc, char **argv)
+/*
+ int main(int argc, char **argv)
 {
 	size_t i = SIZE_MAX;//atoi(argv[1]);
 
@@ -31,3 +32,4 @@ int main(int argc, char **argv)
 	return 0;
 }
 
+*/

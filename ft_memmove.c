@@ -29,7 +29,8 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 
 #include  <unistd.h>
 
-int main(void)
+/*
+ int main(void)
 {
 
 	char a[] = "Hello World !";
@@ -49,3 +50,4 @@ int main(void)
 		
 
 
+*/

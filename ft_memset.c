@@ -20,7 +20,8 @@ void	*ft_memset(void *s, int c, size_t n)
 #include  <unistd.h>
 #include <string.h>
 
-int main(void)
+/*
+ int main(void)
 {
 	char arr[10];
 
@@ -52,3 +53,4 @@ int main(void)
 	return 0;
 }
 		
+*/

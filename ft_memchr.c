@@ -15,7 +15,8 @@ void *ft_memchr(const void *s, int c, size_t n)
 }
 
 #include <unistd.h>
-int main(void)
+/*
+ int main(void)
 {
 	char arr[] = "hello world\n";
 	char* p;
@@ -31,3 +32,4 @@ int main(void)
 
 
 
+*/

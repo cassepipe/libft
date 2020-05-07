@@ -21,7 +21,8 @@ void *ft_memccpy(void *dest, const void *src, int c, size_t n)
 }
 
 #include  <unistd.h>
-int main(void)
+/*
+ int main(void)
 {
 	char arr[] = "Hel12lo";
 
@@ -42,3 +43,4 @@ int main(void)
 
 
 
+*/

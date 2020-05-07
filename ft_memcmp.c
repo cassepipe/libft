@@ -21,7 +21,8 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 #include <string.h>
 #include <stdio.h>
 
-int main(int argc, char** argv)
+/*
+ int main(int argc, char** argv)
 {
 	char* a1 = argv[1];
 	char* a2 = argv[2];
@@ -31,4 +32,5 @@ int main(int argc, char** argv)
 	
 	return 0;
 }
+*/
 */

@@ -19,7 +19,8 @@ void ft_bzero(void *s, size_t n)
 #include <string.h>
 #include <stdio.h>
 
-int main(void)
+/*
+ int main(void)
 {
 	char arr[] = "hello";
 
@@ -31,3 +32,4 @@ int main(void)
 	return 0;
 }
 		
+*/

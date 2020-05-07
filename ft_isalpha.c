@@ -8,7 +8,8 @@ int ft_isalpha(int c)
 }
 
 #include <stdio.h>
-int main(int argc, char **argv)
+/*
+ int main(int argc, char **argv)
 {
 	if (argc != 2)
 		return (0);
@@ -19,3 +20,4 @@ int main(int argc, char **argv)
 
 	return 0;
 }
+*/

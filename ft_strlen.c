@@ -13,13 +13,15 @@ size_t ft_strlen(const char* s)
 	return (len);
 }
 
-//#include <stdio.h>
-//
-//int main(void)
-//{
-//	char arr[] = "Hello";
-//
-//	printf("len of \"Hello\" is %lu", strlen(arr));
-//
-//	return 0;
-//}
+#include <stdio.h>
+
+/*
+int main(void)
+{
+	char arr[] = "Hello";
+
+	printf("len of \"Hello\" is %lu", strlen(arr));
+
+	return 0;
+}
+*/

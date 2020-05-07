@@ -20,7 +20,8 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 //#include  <unistd.h>
 //#include <string.h>
 //
-//int main(void)
+///*
+ int main(void)
 //{
 //
 //	char arr[] = "Hello";
@@ -32,3 +33,4 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 //	return 0;
 //}
 		
+*/
