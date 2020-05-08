@@ -12,9 +12,11 @@ void *ft_memccpy(void *dest, const void *src, int c, size_t n)
 	d = (unsigned char*) dest;
 	s = (unsigned char*) src;
 	value = (unsigned char) c;
-	while (i < n && s[i] != value)
+	while (i < n)
 	{	
 		d[i] = s[i];
+		if (s[i] == value)
+			break;
 		i++;
 	}
 	return (i == n ? NULL : (dest + i + 1));
