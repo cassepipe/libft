@@ -6,6 +6,8 @@ void	*ft_memset(void *s, int c, size_t n)
 	unsigned char value;
 	size_t i;
 	
+	if (!s)
+		return (NULL);
 	p = (unsigned char*) s;
 	value = (unsigned char) c;
 	i = 0;

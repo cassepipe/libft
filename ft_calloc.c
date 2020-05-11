@@ -4,7 +4,8 @@ void *ft_calloc(size_t nmemb, size_t size)
 {
 	void *ret;
 
-	ret = malloc(nmemb * size);
-	ft_memset(ret, 0, size);
+	if(!(ret = malloc(nmemb * size)))
+		return (NULL);
+	ft_bzero(ret, size);
 	return (ret);
 }
