@@ -34,6 +34,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 int	ft_atoi(const char *nptr);
 
+char	*ft_itoa(int n);
+
 int	ft_isalnum(int c);
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
@@ -45,11 +47,11 @@ int	ft_tolower(int c);
 
 void	*ft_calloc(size_t nmemb, size_t size);
 
-char *ft_substr(char const *s, unsigned int start,size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
-char *ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
 
-char *ft_strtrim(char const *s1, char const *set);
+char	*ft_strtrim(char const *s1, char const *set);
 
-char **ft_split(char const *s, char c);
+char	**ft_split(char const *s, char c);
 #endif
