@@ -1,14 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
+/*   Updated: 2020/05/14 17:06:05 by tpouget          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-void *ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t			i;
 	unsigned char	*d;
 	unsigned char	*s;
 
 	i = 0;
-	d = (unsigned char*) dest;
-	s = (unsigned char *) src;
+	d = (unsigned char*)dest;
+	s = (unsigned char *)src;
 	while (i < n)
 	{
 		d[i] = s[i];
@@ -17,11 +29,10 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
+/*
 #include  <unistd.h>
 #include <string.h>
-
-/*
- int main(void)
+int main(void)
 {
 
 	char arr[] = "Hello";

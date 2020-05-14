@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
+/*   Updated: 2020/05/14 17:06:12 by tpouget          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static const char	*next_sep(const char *str, char sep)
@@ -14,7 +26,7 @@ static const char	*next_word(const char *str, char sep)
 	return (str);
 }
 
-static char		*ft_strndup(const char *s, size_t n)
+static char			*ft_strndup(const char *s, size_t n)
 {
 	size_t	i;
 	size_t	len;
@@ -36,7 +48,7 @@ static char		*ft_strndup(const char *s, size_t n)
 	return (duplicate);
 }
 
-static char		**diralloc(const char *s, char c)
+static char			**diralloc(const char *s, char c)
 {
 	size_t	size;
 
@@ -53,7 +65,7 @@ static char		**diralloc(const char *s, char c)
 	return (malloc(size * sizeof(char*)));
 }
 
-char		**ft_split(char const *s, char c)
+char				**ft_split(char const *s, char c)
 {
 	char		**dir;
 	const char	*follower;
@@ -82,7 +94,7 @@ char		**ft_split(char const *s, char c)
 
 /*
 #include <stdio.h>
-int main(int argc, char **argv)
+int					main(int argc, char **argv)
 {
 	if (argc != 3) return 1;
 

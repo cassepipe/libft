@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/14 17:04:38 by tpouget           #+#    #+#             */
+/*   Updated: 2020/05/14 17:06:12 by tpouget          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_strncmp(const char *l, const char *r, size_t n)
 {
-	size_t		i;
-	int		diff;
+	size_t			i;
+	int				diff;
 	unsigned char	*s1;
 	unsigned char	*s2;
 
@@ -30,8 +42,6 @@ int main(int argc, char** argv)
 {
 	char* a1 = argv[1];
 	char* a2 = argv[2];
-
-
 	printf("string.h output :\n");
 	printf("Result : %d\n",strncmp(a1, a2, 0));
 	printf("Result : %d\n",strncmp(a1, a2, 1));

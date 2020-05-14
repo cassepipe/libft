@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/14 16:59:35 by tpouget           #+#    #+#             */
+/*   Updated: 2020/05/14 17:05:20 by tpouget          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static int	ft_isspace(const char c)
@@ -12,7 +24,7 @@ static int	ft_isspace(const char c)
 	return (0);
 }
 
-int		ft_atoi(const char *nptr)
+int			ft_atoi(const char *nptr)
 {
 	long	result;
 	size_t	i;
