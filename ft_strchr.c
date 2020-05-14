@@ -1,20 +1,20 @@
 #include <stdlib.h>
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	unsigned char value;
-	char * ptr;
+	unsigned char	value;
+	char			*ptr;
 
-	value = (unsigned char) c;
-	ptr = (char *) s;
+	value = (unsigned char)c;
+	ptr = (char *)s;
 	while (*ptr)
 	{
 		if (*ptr == value)
-			return ptr;
+			return (ptr);
 		ptr++;
 	}
 	if (!c)
-		return ptr;
+		return (ptr);
 	else
-		return NULL;
+		return (NULL);
 }

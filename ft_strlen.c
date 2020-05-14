@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-size_t ft_strlen(const char* s)
+size_t	ft_strlen(const char *s)
 {
 	size_t len;
 
@@ -13,9 +13,8 @@ size_t ft_strlen(const char* s)
 	return (len);
 }
 
-#include <stdio.h>
-
 /*
+#include <stdio.h>
 int main(void)
 {
 	char arr[] = "Hello";

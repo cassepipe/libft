@@ -6,11 +6,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	i = 0;
 	if (size > 0)
-	{		
-		while(src[i])
+	{
+		while (src[i])
 		{
 			if (i + 1 == size)
-				break;
+				break ;
 			dst[i] = src[i];
 			i++;
 		}
@@ -19,10 +19,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (ft_strlen(src));
 }
 
+/*
 #include <unistd.h>
 #include <stdio.h>
-/*
- int main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	if (argc != 2) return 0;
 
@@ -30,11 +30,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	int a = ft_strlcpy(buf, argv[1], sizeof buf);
 
-	if (a >= sizeof buf) 
-		puts("Truncated\n");	
+	if (a >= sizeof buf)
+		puts("Truncated\n");
 	else
-		puts("Not truncated\n");
+		puts("Not truncated\n")
 
 	write(1, buf, 8);
-}	
+}
 */

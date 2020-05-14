@@ -1,14 +1,13 @@
-#include "libft.h" 
+#include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	unsigned char value;
-	char * ptr;
+	unsigned char	value;
+	char			*ptr;
+	char			*last_encounter;
 
-	value = (unsigned char) c;
-	ptr = (char *) s;
-	char *last_encounter;
-
+	value = (unsigned char)c;
+	ptr = (char *)s;
 	last_encounter = NULL;
 	while (*ptr)
 	{
@@ -17,6 +16,6 @@ char *ft_strrchr(const char *s, int c)
 		ptr++;
 	}
 	if (!value)
-		return ptr;
-	return last_encounter;
+		return (ptr);
+	return (last_encounter);
 }

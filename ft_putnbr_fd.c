@@ -10,21 +10,19 @@ static long	ft_10powerof(long n)
 	return (result);
 }
 
-char		*ft_itoa(int n)
+void		ft_putnbr_fd(int n, int fd)
 {
-	long nbr;
-	long digit;
-	long i;
-	long len;
-	char *result;
+	long	nbr;
+	long	digit;
+	long	i;
+	long	len;
+	char	result[12];
 
 	len = 1;
 	nbr = n < 0 ? -1 * (long)n : n;
 	i = nbr;
 	while (i /= 10)
 		len++;
-	if (!(result = malloc((len + 1) * sizeof(char))))
-		return (NULL);
 	i = 0;
 	if (n < 0)
 		result[i++] = '-';
@@ -35,23 +33,13 @@ char		*ft_itoa(int n)
 		nbr = nbr - digit * ft_10powerof(len);
 	}
 	result[i] = '\0';
-	return (result);
+	write(fd, result, i);
 }
 
 /*
-#include <stdio.h>
 int main(int argc, char **argv)
 {
-	//if (argc != 2) return 1;
-
-	//int n = atoi(argv[1]);
-	int n = -2147483648;
-	while (n++)
-	{
-		char *result = ft_itoa(n);
-
-		printf("%s\n", result);
-	}
+	ft_putnbr_fd(atoi(argv[1]), 2);
 
 	return 0;
 }

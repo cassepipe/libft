@@ -3,10 +3,10 @@
 
 void *ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t i;
-	unsigned char *d;
-	unsigned char *s;
-	unsigned char tmp[n];
+	size_t			i;
+	unsigned char	*d;
+	unsigned char	*s;
+	unsigned char	tmp[n];
 
 	i = 0;
 	d = (unsigned char*) dest;
@@ -20,7 +20,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 	while (i < n)
 	{
 		d[i] = tmp[i];
-		i++;	
+		i++;
 	}
 	return (dest);
 }
@@ -30,7 +30,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 #include  <unistd.h>
 
 /*
- int main(void)
+int main(void)
 {
 
 	char a[] = "Hello World !";
@@ -44,10 +44,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 	ft_memcpy(b + 2, b, 4);
 	write(1, b, sizeof b);
 	write(1, "\n",  1);
-	
+
 	return 0;
 }
-		
-
-
 */

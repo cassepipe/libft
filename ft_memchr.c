@@ -2,9 +2,9 @@
 
 void *ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i;
-	unsigned char *data;
-	unsigned char value;
+	size_t			i;
+	unsigned char	*data;
+	unsigned char	value;
 
 	i = 0;
 	data = (unsigned char*) s;
@@ -14,9 +14,9 @@ void *ft_memchr(const void *s, int c, size_t n)
 	return (i == n ? NULL : data + i);
 }
 
-#include <unistd.h>
 /*
- int main(void)
+#include <unistd.h>
+int main(void)
 {
 	char arr[] = "hello world\n";
 	char* p;
@@ -28,8 +28,4 @@ void *ft_memchr(const void *s, int c, size_t n)
 
 	return 0;
 }
-
-
-
-
 */
