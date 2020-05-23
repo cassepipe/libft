@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: vbaron <vincentbaron1996@gmail.com>        +#+  +:+       +#+         #
+#    By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/04/27 13:17:26 by vbaron            #+#    #+#              #
-#    Updated: 2020/04/27 13:17:30 by vbaron           ###   ########.fr        #
+#    Created: 2020/05/23 16:37:33 by tpouget           #+#    #+#              #
+#    Updated: 2020/05/23 17:05:44 by tpouget          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,17 +51,17 @@ SRC			=	ft_atoi.c    			\
 				ft_putstr_fd.c			\
 				ft_putendl_fd.c			\
 				ft_putnbr_fd.c			\
+				ft_strnstr.c 			\
 
-
-SRC_BONUS	=	ft_lstnew_bonus.c		\
-				ft_lstsize_bonus.c		\
-				ft_lstadd_front_bonus.c	\
-				ft_lstadd_back_bonus.c	\
-				ft_lstlast_bonus.c		\
-				ft_lstdelone_bonus.c	\
-				ft_lstclear_bonus.c		\
-				ft_lstiter_bonus.c		\
-				ft_lstmap_bonus.c		\
+SRC_BONUS	=	ft_lstnew.c		\
+				ft_lstsize.c		\
+				ft_lstadd_front.c	\
+				ft_lstadd_back.c	\
+				ft_lstlast.c		\
+				ft_lstdelone.c	\
+				ft_lstclear.c		\
+				ft_lstiter.c		\
+				ft_lstmap.c		\
 
 
 #	Includes
