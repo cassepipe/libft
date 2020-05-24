@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/14 17:06:05 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/24 17:35:54 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memset(void *s, int c, size_t n)
 	unsigned char	value;
 	size_t			i;
 
-	if (!s)
-		return (NULL);
 	p = (unsigned char*)s;
 	value = (unsigned char)c;
 	i = 0;
