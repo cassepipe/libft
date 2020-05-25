@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/15 14:42:19 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/23 17:23:23 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/25 10:32:48 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	while (lst->next)
-		lst = lst->next;
+	if (lst)
+	{
+		while (lst->next)
+			lst = lst->next;
+	}
 	return (lst);
 }
