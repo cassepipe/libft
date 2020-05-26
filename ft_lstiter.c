@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/15 16:20:32 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/23 17:16:30 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/26 09:51:03 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	{
 		while (lst)
 		{
-			f(lst);
+			f(lst->content);
 			lst = lst->next;
 		}
 	}

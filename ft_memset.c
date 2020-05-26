@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/24 17:35:54 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/25 11:32:19 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
 /*
 #include  <unistd.h>
 #include <string.h>
@@ -49,9 +48,14 @@ int	main(void)
 	write(1, arr, 10);
 	write(1, "\n",  1);
 
-	memset(arr, 306, 3);
+	memset(arr, 306, 1);
 	write(1, arr, 10);
 	write(1, "\n",  1);
+
+	ft_memset(((void*)0), 'a', 12);
+	write(1, arr, 10);
+	write(1, "\n",  1);
+
 
 	return 0;
 }

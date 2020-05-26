@@ -6,7 +6,7 @@
 #    By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/23 16:37:33 by tpouget           #+#    #+#              #
-#    Updated: 2020/05/23 17:05:44 by tpouget          ###   ########.fr        #
+#    Updated: 2020/05/25 14:44:51 by tpouget          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -108,5 +108,7 @@ re:				fclean all
 
 bonus:			${OBJS} ${OBJS_B}
 				${AR} ${NAME} ${OBJS} ${OBJS_B}
+test: all
+				bash ../Libftest/grademe.sh
 
-.PHONY:			all clean fclean re bonus
+.PHONY:			all clean fclean re bonus test
