@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/14 17:06:12 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/26 14:29:25 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ char	*ft_strdup(const char *s)
 		duplicate[i] = s[i];
 		i++;
 	}
+	duplicate[i] = '\0';
 	return (duplicate);
 }
 
