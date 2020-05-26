@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/14 17:06:05 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/26 16:17:36 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	d = (unsigned char*)dest;
 	s = (unsigned char*)src;
+	if (!d && !s)
+		return (NULL);
 	while (i < n)
 	{
 		tmp[i] = s[i];
