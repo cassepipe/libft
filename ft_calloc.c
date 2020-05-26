@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:00:07 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/26 10:40:11 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/26 10:48:21 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,7 @@ static void *ft_memalloc(size_t size)
 	return (data);
 }
 
-void	*ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	return ft_memalloc(nmemb * size);
+	return (ft_memalloc(count * size));
 }
-
-/*
-void	*ft_calloc(size_t nmemb, size_t size)
-{
-	void	*ret;
-
-	ret = malloc(nmemb * size);
-	if (ret)
-		ft_bzero(ret, size);
-	return (ret);
-}
-*/
