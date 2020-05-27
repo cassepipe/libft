@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/14 17:06:04 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/27 11:08:21 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ char		*ft_itoa(int n)
 	i = nbr;
 	while (i /= 10)
 		len++;
-	if (!(result = malloc((len + 1) * sizeof(char))))
+	result = n < 0 ? malloc(len + 2) : malloc(len + 1);
+	if (!result)
 		return (NULL);
 	i = 0;
 	if (n < 0)
@@ -56,14 +57,12 @@ int main(int argc, char **argv)
 {
 	//if (argc != 2) return 1;
 
-	//int n = atoi(argv[1]);
-	int n = -2147483648;
-	while (n++)
-	{
-		char *result = ft_itoa(n);
+//	int n = atoi(argv[1]);
+//	int n = -2147483648;
+	int n = -5859;
+	char *result = ft_itoa(n);
 
-		printf("%s\n", result);
-	}
+	printf("%s\n", result);
 
 	return 0;
 }
