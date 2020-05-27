@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:38 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/14 17:06:13 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/27 18:31:35 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,26 +36,29 @@ static char	*ft_strndup(const char *s, size_t n)
 
 char		*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	return (ft_strndup(s + start, len));
+	if (ft_strlen(s) > start)
+		return (ft_strndup(s + start, len));
+	else
+		return ft_strdup("");
 }
 
 /*
 #include <string.h>
 #include <stdio.h>
- int main(int argc, char **argv)
+int main(int argc, char **argv)
 {
-	if (argc  != 3) return 1;
-	char* dup;
-	char* dup2;
-	char* dup3;
-	dup = ft_strndup(argv[1], atoi(argv[2]));
-	dup2 = strndup(argv[1], atoi(argv[2]));
-	printf("%s\n", dup);
-	printf("%s\n", dup2);
-	if (dup2[0] == '\0')
-		printf("Empty string !");
-	dup3 = ft_substr("Hello World!", atoi(argv[1]), atoi(argv[2]));
-	printf("%s\n", dup3);
-	return 0;
+if (argc  != 3) return 1;
+char* dup;
+char* dup2;
+char* dup3;
+dup = ft_strndup(argv[1], atoi(argv[2]));
+dup2 = strndup(argv[1], atoi(argv[2]));
+printf("%s\n", dup);
+printf("%s\n", dup2);
+if (dup2[0] == '\0')
+printf("Empty string !");
+dup3 = ft_substr("Hello World!", atoi(argv[1]), atoi(argv[2]));
+printf("%s\n", dup3);
+return 0;
 }
 */
