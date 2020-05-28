@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:38 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/27 18:31:35 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/28 10:34:28 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char		*ft_substr(char const *s, unsigned int start, size_t len)
 	if (ft_strlen(s) > start)
 		return (ft_strndup(s + start, len));
 	else
-		return ft_strdup("");
+		return (ft_strdup(""));
 }
 
 /*
