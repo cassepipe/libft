@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/25 11:32:19 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/28 10:39:42 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,24 +39,18 @@ int	main(void)
 	ft_memset(arr, 48, 10);
 	write(1, arr, 10);
 	write(1, "\n",  1);
-
 	ft_memset(arr, 49, 5);
 	write(1, arr, 10);
 	write(1, "\n",  1);
-
 	ft_memset(arr, 306, 1); // 306 - 256 = 50 --> '2'
 	write(1, arr, 10);
 	write(1, "\n",  1);
-
 	memset(arr, 306, 1);
 	write(1, arr, 10);
 	write(1, "\n",  1);
-
 	ft_memset(((void*)0), 'a', 12);
 	write(1, arr, 10);
 	write(1, "\n",  1);
-
-
 	return 0;
 }
 */

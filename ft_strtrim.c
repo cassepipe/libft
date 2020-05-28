@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:38 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/14 17:06:13 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/27 12:56:50 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,45 +69,3 @@ char		*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	return (trimmed);
 }
-
-/*
-char *ft_strrem(char const *s1, char const *set)
-{
-	size_t i;
-	size_t y;
-	size_t trimmed_len;
-	char *trimmed;
-
-	i = 0;
-	trimmed_len = 0;
-	while  (s1[i])
-	{
-		if (!_in_set(s1[i], set))
-			trimmed_len++;
-		i++;
-	}
-	if(!(trimmed = malloc(trimmed_len + 1)))
-		return (NULL);
-	i = 0;
-	y = 0;
-	while (s1[i])
-	{
-		if(!_in_set(s1[i], set))
-		{
-			trimmed[y] = s1[i];
-			y++;
-		}
-		i++;
-	}
-	trimmed[trimmed_len] = '\0';
-	return (trimmed);
-}
-#include <stdio.h>
-int main(int argc, char **argv)
-{
-	if (argc != 3) return 1;
-	printf("%s\n", ft_strtrim(argv[1], argv[2]));
-
-	return 0;
-}
-*/

@@ -6,13 +6,13 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/16 11:28:18 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/26 09:48:40 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/28 10:40:30 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
 	t_list	*element;
@@ -33,6 +33,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
 	}
 	return (new_list);
 }
+
 /*
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
 {
