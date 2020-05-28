@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/14 17:06:12 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/05/28 10:43:33 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ char				**ft_split(char const *s, char c)
 		{
 			while (--i >= 0)
 				free(dir[i]);
+			free(dir);
 			return (NULL);
 		}
 		s = next_word(s, c);
