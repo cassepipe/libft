@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int	ft_isspace(const char c)
+int	ft_isspace(int c)
 {
 	if (c == ' '
 	|| c == '\t'
