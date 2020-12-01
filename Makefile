@@ -6,7 +6,7 @@
 #    By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/23 16:37:33 by tpouget           #+#    #+#              #
-#    Updated: 2020/05/25 14:44:51 by tpouget          ###   ########.fr        #
+#    Updated: 2020/12/02 00:16:49 by tpouget          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRC			=	ft_atoi.c    			\
 				ft_isascii.c 			\
 				ft_isdigit.c 			\
 				ft_isprint.c 			\
+				ft_isspace.c			\
 				ft_memset.c  			\
 				ft_memcpy.c 			\
 				ft_memchr.c 			\
