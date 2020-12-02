@@ -6,7 +6,7 @@
 #    By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/23 16:37:33 by tpouget           #+#    #+#              #
-#    Updated: 2020/12/02 00:16:49 by tpouget          ###   ########.fr        #
+#    Updated: 2020/12/02 19:28:45 by tpouget          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,41 +45,37 @@ SRC			=	ft_atoi.c    			\
 				ft_substr.c 			\
 				ft_strjoin.c 			\
 				ft_strtrim.c 			\
-				ft_split.c			\
-				ft_itoa.c			\
+				ft_split.c				\
+				ft_itoa.c				\
 				ft_strmapi.c			\
 				ft_putchar_fd.c			\
 				ft_putstr_fd.c			\
 				ft_putendl_fd.c			\
 				ft_putnbr_fd.c			\
 				ft_strnstr.c 			\
-
-SRC_BONUS	=	ft_lstnew.c		\
-				ft_lstsize.c		\
-				ft_lstadd_front.c	\
-				ft_lstadd_back.c	\
-				ft_lstlast.c		\
-				ft_lstdelone.c	\
-				ft_lstclear.c		\
-				ft_lstiter.c		\
-				ft_lstmap.c		\
+				ft_lstnew.c				\
+				ft_lstsize.c			\
+				ft_lstadd_front.c		\
+				ft_lstadd_back.c		\
+				ft_lstlast.c			\
+				ft_lstdelone.c			\
+				ft_lstclear.c			\
+				ft_lstiter.c			\
+				ft_lstmap.c				\
+				get_next_line.c			\
 
 
 #	Includes
-INCLUDES		=	libft.h		
+INCLUDES		=	libft.h	get_next_line.h	
 
 #	Objects
 OBJS		= 	${SRC:.c=.o}
-
-OBJS_B		=	${SRC_BONUS:.c=.o}
 
 #	Output
 NAME			= 	libft.a
 
 #	Compiler
 CFLAGS		=	-Werror -Wall -Wextra
-
-
 
 RM			= 	rm -rf
 
@@ -91,7 +87,7 @@ ATTRIBUT 	= 	-c
 
 #	Rules
 
-all:			${NAME} bonus
+all:			${NAME}
 
 -c.o:			
 				${CC} ${CFLAGS} ${ATTRIBUT} $< -o $(<:.c=.o) -I${INCLUDES}
@@ -107,9 +103,4 @@ fclean:			clean
 
 re:				fclean all
 
-bonus:			${OBJS} ${OBJS_B}
-				${AR} ${NAME} ${OBJS} ${OBJS_B}
-test: all
-				bash ../Libftest/grademe.sh
-
-.PHONY:			all clean fclean re bonus test
+.PHONY:			all clean fclean re

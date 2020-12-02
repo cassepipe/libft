@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:29:05 by tpouget           #+#    #+#             */
-/*   Updated: 2020/12/02 00:16:20 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/12/02 19:21:30 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include "get_next_line.h"
 
 typedef struct		s_list
 {
@@ -72,6 +73,8 @@ void				*ft_calloc(size_t nmemb, size_t size);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 
 char				*ft_strjoin(char const *s1, char const *s2);
+
+char				*ft_strjoin_and_free(const char *s1, const char *s2);
 
 char				*ft_strtrim(char const *s1, char const *set);
 
