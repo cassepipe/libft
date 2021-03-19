@@ -6,7 +6,7 @@
 #    By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/23 16:37:33 by tpouget           #+#    #+#              #
-#    Updated: 2020/12/02 19:28:45 by tpouget          ###   ########.fr        #
+#    Updated: 2020/12/04 16:07:13 by tpouget          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,7 @@ SRC			=	ft_atoi.c    			\
 				ft_strnstr.c 			\
 				ft_substr.c 			\
 				ft_strjoin.c 			\
+				ft_strjoin_and_free.c	\
 				ft_strtrim.c 			\
 				ft_split.c				\
 				ft_itoa.c				\
@@ -75,7 +76,7 @@ OBJS		= 	${SRC:.c=.o}
 NAME			= 	libft.a
 
 #	Compiler
-CFLAGS		=	-Werror -Wall -Wextra
+CFLAGS		=	-Werror -Wall -Wextra -g3
 
 RM			= 	rm -rf
 
@@ -92,7 +93,7 @@ all:			${NAME}
 -c.o:			
 				${CC} ${CFLAGS} ${ATTRIBUT} $< -o $(<:.c=.o) -I${INCLUDES}
 
-${NAME}:		${OBJS}
+${NAME}:		${OBJS} Makefile
 				${AR} ${NAME} ${OBJS}
 
 clean:			

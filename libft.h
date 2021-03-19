@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:29:05 by tpouget           #+#    #+#             */
-/*   Updated: 2020/12/02 19:21:30 by tpouget          ###   ########.fr       */
+/*   Updated: 2020/12/04 22:15:47 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 typedef struct		s_list
 {
-	void			*content;
 	struct s_list	*next;
+	void			*content;
 }					t_list;
 
 void				*ft_memcpy(void *dest, const void *src, size_t n);
