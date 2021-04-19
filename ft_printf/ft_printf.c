@@ -6,12 +6,11 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/13 11:18:09 by tpouget           #+#    #+#             */
-/*   Updated: 2021/04/19 15:21:11 by tpouget          ###   ########.fr       */
+/*   Updated: 2021/04/19 16:40:20 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-#include <stdio.h>
+#include "ft_printf_utils.h"
 
 int	ft_printf(const char *formatted_string, ...)
 {

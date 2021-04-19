@@ -6,11 +6,11 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 10:31:16 by tpouget           #+#    #+#             */
-/*   Updated: 2021/04/19 15:21:34 by tpouget          ###   ########.fr       */
+/*   Updated: 2021/04/19 16:41:33 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_utils.h"
 
 void	leftpad(char **str, char c, size_t n)
 {

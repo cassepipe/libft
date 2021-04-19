@@ -6,7 +6,7 @@
 #    By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/23 16:37:33 by tpouget           #+#    #+#              #
-#    Updated: 2021/04/19 15:17:16 by tpouget          ###   ########.fr        #
+#    Updated: 2021/04/19 17:09:52 by tpouget          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,7 @@ SRC			=	ft_atoi.c    			\
 				ft_memcmp.c				\
 				ft_strchr.c				\
 				ft_strdup.c				\
+				ft_strndup.c			\
 				ft_strlen.c  			\
 				ft_strncmp.c 			\
 				ft_strrchr.c 			\

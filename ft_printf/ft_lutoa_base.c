@@ -6,11 +6,11 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/21 11:00:49 by tpouget           #+#    #+#             */
-/*   Updated: 2021/04/19 15:20:58 by tpouget          ###   ########.fr       */
+/*   Updated: 2021/04/19 16:39:29 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_utils.h"
 
 static unsigned long	to_the_power_of(unsigned long n, unsigned long p)
 {
