@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:38 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/27 12:56:50 by tpouget          ###   ########.fr       */
+/*   Updated: 2021/04/19 15:33:04 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,28 +23,6 @@ static int	is_in_set(char c, char const *set)
 		set++;
 	}
 	return (0);
-}
-
-static char	*ft_strndup(const char *s, size_t n)
-{
-	size_t	i;
-	size_t	len;
-	char	*duplicate;
-
-	i = 0;
-	len = 0;
-	while (len < n && s[len])
-		len++;
-	duplicate = malloc(len + 1);
-	if (!duplicate)
-		return (NULL);
-	while (i < len)
-	{
-		duplicate[i] = s[i];
-		i++;
-	}
-	duplicate[len] = '\0';
-	return (duplicate);
 }
 
 char		*ft_strtrim(char const *s1, char const *set)

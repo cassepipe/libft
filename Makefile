@@ -6,7 +6,7 @@
 #    By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/23 16:37:33 by tpouget           #+#    #+#              #
-#    Updated: 2020/12/04 16:07:13 by tpouget          ###   ########.fr        #
+#    Updated: 2021/04/19 15:17:16 by tpouget          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,13 @@ SRC			=	ft_atoi.c    			\
 				ft_lstiter.c			\
 				ft_lstmap.c				\
 				get_next_line.c			\
+				ft_printf/repr.c		\
+				ft_printf/pad.c			\
+				ft_printf/ft_vdprintf.c	\
+				ft_printf/ft_printf.c	\
+				ft_printf/ft_lutoa_base.c 	\
+				ft_printf/ft_dprintf.c		\
+				ft_printf/format_utils.c	\
 
 
 #	Includes

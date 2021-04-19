@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 17:04:37 by tpouget           #+#    #+#             */
-/*   Updated: 2020/05/28 10:43:33 by tpouget          ###   ########.fr       */
+/*   Updated: 2021/04/19 15:32:04 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,28 +24,6 @@ static const char	*next_word(const char *str, char sep)
 	while (*str && *str == sep)
 		str++;
 	return (str);
-}
-
-static char			*ft_strndup(const char *s, size_t n)
-{
-	size_t	i;
-	size_t	len;
-	char	*duplicate;
-
-	i = 0;
-	len = 0;
-	while (len < n && s[len])
-		len++;
-	duplicate = malloc(len + 1);
-	if (!duplicate)
-		return (NULL);
-	while (i < len)
-	{
-		duplicate[i] = s[i];
-		i++;
-	}
-	duplicate[len] = '\0';
-	return (duplicate);
 }
 
 static char			**diralloc(const char *s, char c)

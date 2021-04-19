@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/14 18:29:05 by tpouget           #+#    #+#             */
-/*   Updated: 2020/12/04 22:15:47 by tpouget          ###   ########.fr       */
+/*   Updated: 2021/04/19 15:25:29 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t				ft_strlen(const char *s);
 
 char				*ft_strdup(const char *s);
+char				*ft_strndup(const char *s, size_t n);
 
 char				*ft_strchr(const char *s, int c);
 

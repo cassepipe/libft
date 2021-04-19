@@ -6,7 +6,7 @@
 /*   By: tpouget <cassepipe@ymail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/08 16:20:06 by tpouget           #+#    #+#             */
-/*   Updated: 2020/12/02 19:23:00 by tpouget          ###   ########.fr       */
+/*   Updated: 2021/04/19 15:03:18 by tpouget          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 32
+#  define BUFFER_SIZE 1024
 # endif
 
 # ifndef OPEN_MAX
